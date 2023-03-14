@@ -1,0 +1,47 @@
+plugins {
+    id 'ata-curriculum.snippets-conventions'
+}
+
+checkstyle {
+    def suppressionFile = rootProject.file('Utilities/ATACheckstyle/configuration/checkstyle/unit1/suppressions.xml')
+    configProperties.put('checkstyle.suppression.filter', suppressionFile)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.8.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+}
+
+def wflowToTestsMap = [
+        'oregontrail-application-test': [
+                'com.kenzie.oregontrail.ApplicationTest'
+        ],
+        'oregontrail-doctor-test': [
+                'com.kenzie.oregontrail.DoctorTest'
+        ],
+        'oregontrail-hunter-test': [
+                'com.kenzie.oregontrail.HunterTest'
+        ],
+        'oregontrail-traveler-test': [
+                'com.kenzie.oregontrail.TravelerTest'
+        ],
+        'oregontrail-wagon-test': [
+                'com.kenzie.oregontrail.WagonTest'
+        ],
+]
+
+wflowToTestsMap.forEach { wflowName, testList ->
+    tasks.register(wflowName) {
+        dependsOn wflowtest
+        test.doFirst {
+            filter {
+                testList.each { includeTestsMatching it }
+            }
+        }
+    }
+}
