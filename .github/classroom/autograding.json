@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Oregon Trail Application Test",
+      "setup": "",
+      "run": "./gradlew oregontrail-application-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Oregon Trail Doctor Test",
+      "setup": "",
+      "run": "./gradlew oregontrail-doctor-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Oregon Trail Hunter Test",
+      "setup": "",
+      "run": "./gradlew oregontrail-hunter-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Oregon Trail Traveler Test",
+      "setup": "",
+      "run": "./gradlew oregontrail-traveler-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Oregon Trail Wagon Test",
+      "setup": "",
+      "run": "./gradlew oregontrail-wagon-test --rerun-tasks",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
