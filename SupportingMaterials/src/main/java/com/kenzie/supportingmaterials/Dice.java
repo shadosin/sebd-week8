@@ -22,8 +22,14 @@ public class Dice {
 
     public int rollDice(int x) {
         // TODO
+        Random rand = new Random();
+        this.die1 = rand.nextInt(x) +1;
+        this.die2 = rand.nextInt(x) +1;
         return -1;
     }
-
+@Override
+    public String toString(){
+        return "(" + die1 + "," + die2 + ")";
+}
     // TODO override toString
 }

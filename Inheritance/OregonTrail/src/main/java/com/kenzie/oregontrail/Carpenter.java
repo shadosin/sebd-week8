@@ -29,5 +29,31 @@ Methods
         If the carpenter is left with 0 food, they become unhealthy
  */
 public class Carpenter extends Traveler {
+    public Carpenter(){
+        super("Carpenter");
+    }
+    public Carpenter(String name){
+        super(name);
 
-}
+    }
+    @Override
+    public void eat(){
+
+        if(food >= 2){
+            food -= 2;
+            isHealthy=true;
+        }else{
+            super.eat();
+        }
+
+    }
+    public void tryToFixWagon(Wagon wagon, Traveler other){
+        if (food >= 2 && other.isHealthy()){
+            wagon.fixWagon();
+            eat();
+        }else{
+            System.out.println(Script.SHOOT.message);
+        }
+    }
+    }
+

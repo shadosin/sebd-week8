@@ -8,6 +8,6 @@ public class Reptile {
     }
 
     public void makeSound() {
-        System.out.println("Silence.");
+        System.out.println("Scurry.");
     }
 }

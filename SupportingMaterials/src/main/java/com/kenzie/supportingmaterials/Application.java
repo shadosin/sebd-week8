@@ -1,5 +1,6 @@
 package com.kenzie.supportingmaterials;
 
+import com.kenzie.supportingmaterials.animals.Alligator;
 import com.kenzie.supportingmaterials.calendar.Calendar;
 import com.kenzie.supportingmaterials.tickets.VIPTicket;
 
@@ -14,7 +15,11 @@ public class Application {
         VIPTicket vipTicket = new VIPTicket();
 
         // TODO print each property
-
+        System.out.println(vipTicket.event);
+        System.out.println(vipTicket.getPrice());
+        System.out.println(vipTicket.getIsValid());
+        System.out.println(vipTicket.getName());
+        System.out.println(vipTicket.getGiveaway());
     }
 
     public static void appointmentPractice() {
@@ -26,6 +31,8 @@ public class Application {
     }
 
     public static void alligatorPractice() {
+        Alligator alligator = new Alligator();
+        alligator.makeSound();
 
 
     }

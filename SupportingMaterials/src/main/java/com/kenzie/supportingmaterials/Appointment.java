@@ -13,11 +13,16 @@ public class Appointment {
 
     public boolean setAppointmentStatus(String status) {
         // TODO
-        return false;
+        if(status.equals(this.status)) {
+            return false;
+        }else{
+            this.status = status;
+            return true;
+        }
     }
 
     public String getAppointmentStatus() {
         // TODO
-        return "";
+        return this.status.substring(0, 3);
     }
 }

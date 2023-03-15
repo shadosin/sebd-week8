@@ -28,5 +28,29 @@ Methods
  */
 
 public class Ranger extends Traveler {
+    public Ranger(){
+        super("Ranger");
+        this.food = 4;
+    }
+    public Ranger(String name){
+        super(name);
+        this.food = 4;
+    }
+    @Override
+    public void trap(){
+        food += 4;
+    }
+    public void forageMedicine(Traveler other, int amount){
+        Random random = new Random();
+        if(random.nextInt(5) + 1 == amount){
+            other.setHealthy(isHealthy);
+        }
+    }
+    public void cook(Traveler other, int amount){
+        if (food >= amount){
+            other.food += amount;
+            food -= amount;
 
+        }
+    }
 }

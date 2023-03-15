@@ -18,6 +18,11 @@ public class VIPTicket extends Ticket {
 
     public void createVIPTicket(String name, String event) {
         // TODO fill me out
+        this.name = name;
+        this. event = event;
+        this.price = 0.0;
+        this.activateTicket();
+        this.giveaway = "white rabbit";
     }
 
 }
