@@ -28,7 +28,14 @@ This program should have the following statics and constants
 @SuppressWarnings("unchecked")
 public class Application {
     /*** Declare Statics and Constants Here ***/
-
+    static final int TOTAL_MILES = 250;
+    static final int MILES_PER_DAY = 20;
+    static final int FOOD_EXCHANGE = 2;
+    static final int  MAX_DAYS = 23;
+    static final int WAGON_SIZE = 8;
+    static final int NUM_TRAVELERS = 3;
+    static final int NUM_RANGERS = 3;
+    static final int NUM_CARPENTERS = 2;
 
 
     // You go hunting every X days ( you can change this as you play )
@@ -73,7 +80,7 @@ public class Application {
         // ---------------- Oregon Trail Part Two ----------------
         // This uses the one day method above, to play the entire game!
         // TODO uncomment this when you're ready
-        // oregonTrailPlayGame();
+         oregonTrailPlayGame();
     }
 
     /*** DO NOT CHANGE THE CODE BELOW THIS LINE ***/

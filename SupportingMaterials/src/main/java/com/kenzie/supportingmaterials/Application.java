@@ -2,6 +2,7 @@ package com.kenzie.supportingmaterials;
 
 import com.kenzie.supportingmaterials.animals.Alligator;
 import com.kenzie.supportingmaterials.calendar.Calendar;
+import com.kenzie.supportingmaterials.calendar.DayOfWeek;
 import com.kenzie.supportingmaterials.tickets.VIPTicket;
 
 
@@ -45,10 +46,18 @@ public class Application {
         * maximum days = 100
         * difficulty mode = "Advanced"
         */
+        final int dozen = 12;
+        final String destination = "Oregon";
+        final int maxDays = 100;
+        final String difficultyMode = "Advanced";
+        System.out.println(dozen);
+        System.out.println(destination);
+        System.out.println(maxDays);
+        System.out.println(difficultyMode);
     }
 
     public static void calendarPractice() {
-        Calendar currentDay = new Calendar();
+        Calendar currentDay = new Calendar(Calendar.Month.March, DayOfWeek.Wednesday);
 
         System.out.println(currentDay);
     }

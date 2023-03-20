@@ -6,6 +6,18 @@ public class Calendar {
 
     // TODO Define enum Month for all twelve months here
     public enum Month {
+        January,
+        February,
+        March,
+        April,
+        May,
+        June,
+        July,
+        August,
+        September,
+        October,
+        November,
+        December
 
     }
 

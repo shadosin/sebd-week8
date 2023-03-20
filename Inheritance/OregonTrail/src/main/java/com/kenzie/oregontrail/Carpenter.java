@@ -50,7 +50,10 @@ public class Carpenter extends Traveler {
     public void tryToFixWagon(Wagon wagon, Traveler other){
         if (food >= 2 && other.isHealthy()){
             wagon.fixWagon();
-            eat();
+            while(food > 0){
+                eat();
+                isHealthy = false;
+            }
         }else{
             System.out.println(Script.SHOOT.message);
         }

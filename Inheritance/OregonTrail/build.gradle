@@ -22,10 +22,10 @@ def wflowToTestsMap = [
                 'com.kenzie.oregontrail.ApplicationTest'
         ],
         'oregontrail-doctor-test': [
-                'com.kenzie.oregontrail.DoctorTest'
+                'com.kenzie.oregontrail.SubclassBTest'
         ],
         'oregontrail-hunter-test': [
-                'com.kenzie.oregontrail.HunterTest'
+                'com.kenzie.oregontrail.SubclassATest'
         ],
         'oregontrail-traveler-test': [
                 'com.kenzie.oregontrail.TravelerTest'
