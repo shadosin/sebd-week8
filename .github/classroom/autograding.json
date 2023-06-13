@@ -11,9 +11,9 @@
       "points": null
     },
     {
-      "name": "Oregon Trail Doctor Test",
+      "name": "Oregon Trail Carpenter Test",
       "setup": "",
-      "run": "./gradlew oregontrail-doctor-test --rerun-tasks",
+      "run": "./gradlew oregontrail-carpenter-test --rerun-tasks",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -21,9 +21,9 @@
       "points": null
     },
     {
-      "name": "Oregon Trail Hunter Test",
+      "name": "Oregon Trail Ranger Test",
       "setup": "",
-      "run": "./gradlew oregontrail-hunter-test --rerun-tasks",
+      "run": "./gradlew oregontrail-ranger-test --rerun-tasks",
       "input": "",
       "output": "",
       "comparison": "included",
